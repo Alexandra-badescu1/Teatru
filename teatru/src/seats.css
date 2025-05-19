@@ -1,0 +1,59 @@
+.seat-selection-page {
+  font-family: 'Georgia', serif;
+}
+
+.screen {
+  background: #444;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.theater-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.seat-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.seat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seat-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.seat-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.seat-button.selected .seat-img {
+  outline: 2px solid green;
+  border-radius: 4px;
+}
+
+.seat-button.reserved {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.seat-label {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 2px;
+}

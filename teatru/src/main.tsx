@@ -1,0 +1,16 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./App.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import { AppProvider } from "./context/Context";
+console.log("🚀 React is starting...");
+
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <AppProvider>
+      <App />
+    </AppProvider>
+  </React.StrictMode>
+);
